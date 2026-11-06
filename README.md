@@ -2,7 +2,7 @@
 
 ![CI](https://github.com/Sadiq109/Sadiq-visualization/actions/workflows/ci.yml/badge.svg)
 
-I started this as a single scatter plot and grew it into a small data project: load the Iris dataset, summarize it, plot every feature pair, and classify the species with a k-nearest-neighbors model I wrote from scratch (no scikit-learn), then pick k with cross-validation.
+A small data project: load the Iris dataset, summarize it, plot every feature pair, and classify the species with a k-nearest-neighbors model written from scratch (no scikit-learn), then pick k with cross-validation.
 
 ![Pair grid](figures/pair_grid.png)
 
@@ -35,9 +35,9 @@ Hold-out accuracy: 1.000
 
 ![Accuracy by k](figures/k_curve.png)
 
-## What I learned
+## Findings
 
-Petal length and width separate the species far better than the sepal measurements, which the pair grid makes obvious. Standardizing mattered: without it the larger sepal values dominate the distance. Setosa is always easy; the few mistakes are between versicolor and virginica.
+Petal length and width separate the species far better than the sepal measurements, which the pair grid makes obvious. Standardizing matters: without it the larger sepal values dominate the distance. Setosa is always easy; the few mistakes are between versicolor and virginica.
 
 ## Layout
 
